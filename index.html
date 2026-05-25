@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asad's portfolio</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <!-- ================tailwindcss=========================== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ==================flowbite ui========================== -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- =====================font awesome======================= -->
+    <script
+      src="https://kit.fontawesome.com/db9e661b57.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ===============google font======================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ======================custom css========================= -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-['Poppins']">
+    <header class="bg-[#010127] z-50 top-0 sticky px-2 md:px6 lg:px-20">
+      <nav class="px-2 md:px-4 lg:px-8">
+        <div
+          class="container flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <div class="flex text-white">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img class="w-10" src="./images/logo.png" alt="" />
+            </a>
+            <h1 class="flex items-end text-2xl font-bold">SAD</h1>
+          </div>
+          <button
+            data-collapse-toggle="navbar-solid-bg"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-solid-bg"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+            <ul
+              class="text-white font-medium flex flex-col md:flex-row gap-2 md:gap-4 mt-2 md:mt-0 bg-gray-900 md:bg-[#010127] p-4 md:p-0 rounded-lg"
+            >
+              <li
+                class="hover:bg-[#3d2689] py-2 rounded-md px-3 md:px-2 lg:px-3 md:hover:duration-200 outline-none active:bg-[#1b1238]"
+              >
+                <a href="#">Home</a>
+              </li>
+              <li
+                class="hover:bg-[#3d2689] py-2 rounded-md px-3 md:px-2 lg:px-3 md:hover:duration-200 outline-none active:bg-[#1b1238]"
+              >
+                <a href="#about">About</a>
+              </li>
+              <li
+                class="hover:bg-[#3d2689] py-2 rounded-md px-3 md:px-2 lg:px-3 md:hover:duration-200 outline-none active:bg-[#1b1238]"
+              >
+                <a href="#projects">Projects</a>
+              </li>
+              <li
+                class="hover:bg-[#3d2689] py-2 rounded-md px-3 md:px-2 lg:px-3 md:hover:duration-200 outline-none active:bg-[#1b1238]"
+              >
+                <a href="#education">Education</a>
+              </li>
+              <li
+                class="hover:bg-[#3d2689] py-2 rounded-md px-3 md:px-2 lg:px-3 md:hover:duration-200 outline-none active:bg-[#1b1238]"
+              >
+                <a href="#skills">Skills</a>
+              </li>
+              <li
+                class="hover:bg-[#3d2689] py-2 rounded-md px-3 md:px-2 lg:px-3 md:hover:duration-200 outline-none active:bg-[#1b1238]"
+              >
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="space-y-10 md:space-y-16 lg:space-y-20">
+      <!-- =============banner section================ -->
+      <section class="bg-[#010127] banner-container px-2 md:px-6 lg:px-24">
+        <div class="container mx-auto pb-10">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-5 px-5 py-10 text-white"
+          >
+            <div class="flex flex-col justify-center sm:mb-8">
+              <h3>
+                Hey<span class="text-[#DC143C] font-bold">!</span> My name is
+              </h3>
+              <h1
+                class="text-3xl md:text-3xl lg:text-5xl my-5 font-bold lg:font-extrabold"
+              >
+                Md <span class="text-[#DC143C]"> Asadul </span>Islam
+              </h1>
+              <h3>A Front-End Web Developer</h3>
+              <div class="flex gap-3 lg:gap-4">
+                <div>
+                  <button
+                    class="border border-green-500 px-5 py-2 rounded-lg outline-none mt-4 hover:bg-[#212129] duration-500"
+                  >
+                    <a
+                      class="flex gap-2 items-center"
+                      href="https://github.com/Asad9340"
+                      target="_blank"
+                      ><i class="fa-brands fa-github"></i>Github</a
+                    >
+                  </button>
+                </div>
+                <div>
+                  <button
+                    class="border border-green-500 px-5 py-2 rounded-lg outline-none mt-4 hover:bg-[#212129] duration-500"
+                  >
+                    <a
+                      class="flex gap-2 items-center"
+                      href="https://drive.google.com/file/d/1YCvXyqy4Bnm8NdS_uTAiC0D22_pkyK_Y/view"
+                      target="_blank"
+                      ><i class="fa-solid fa-circle-down"></i> RESUME</a
+                    >
+                  </button>
+                </div>
+              </div>
+              <div class="mt-4 flex gap-3 text-2xl">
+                <button class="hover:text-blue-800">
+                  <a href="https://www.facebook.com/asad9340" target="_blank"
+                    ><i class="fa-brands fa-square-facebook"></i
+                  ></a>
+                </button>
+                <button class="hover:text-[#0A66C2]">
+                  <a
+                    href="https://www.linkedin.com/in/asad9340/"
+                    target="_blank"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </button>
+                <button class="hover:text-[#1A8CD8]">
+                  <a href="https://twitter.com/asad9340" target="_blank"
+                    ><i class="fa-brands fa-square-x-twitter"></i
+                  ></a>
+                </button>
+              </div>
+            </div>
+            <div class="items-end mt-6 mb-10">
+              <div class="banner flex justify-center md:justify-end">
+                <img class="shape" src="./images/banner.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==================about section================== -->
+      <section
+        id="about"
+        class="container mx-auto mt-4 md:mt-7 lg:mt-10 px-2 md:px-6 lg:px-24"
+      >
+        <h2
+          class="text-center font-semibold text-2xl lg:text-3xl bg-[#010127] text-white py-3 lg:py-4 rounded-xl mx-3"
+        >
+          About Me
+        </h2>
+        <div class="flex flex-col md:flex-row gap-4 px-3 py-4 md:py-8">
+          <div class="md:flex-1">
+            <img class="rounded-xl w-full" src="./images/about.jpg" alt="" />
+          </div>
+          <div class="md:flex-1 flex flex-col justify-center lg:pl-3">
+            <h2 class="font-medium lg:font-semibold text-xl lg:text-2xl">
+              <span class="text-lg font-medium">Hello! 👋 there ,</span> <br />
+              I'm <span class="text-[#DC143C]">Asad</span>, a dedicated web
+              developer
+            </h2>
+            <p
+              class="text-[#4F5A6C] block md:hidden lg:block mt-4 text-sm lg:text-base"
+            >
+              I am passionate for crafting elegant and functional digital
+              solutions. With a solid foundation in HTML5, CSS3, and JavaScript,
+              coupled with expertise in React.js, Node.js, and MongoDB, I
+              specialize in creating seamless and dynamic web applications. I
+              thrive on turning ideas into reality and am constantly seeking new
+              challenges to push my skills to the next level. Let's collaborate
+              and bring your vision to life!
+            </p>
+            <p
+              class="hidden md:block lg:hidden text-[#4F5A6C] mt-4 text-sm lg:text-base"
+            >
+              I am passionate about creating elegant digital solutions. With
+              expertise in HTML5, CSS3, JavaScript, React.js, Node.js, and
+              MongoDB, I specialize in dynamic web apps. Let's turn your ideas
+              into reality together!
+            </p>
+            <div>
+              <button
+                class="bg-[#010127] text-white px-3 md:px-4 lg:px-5 py-2 rounded-lg outline-none mt-5"
+              >
+                <a
+                  href="https://drive.google.com/file/d/1Y8lmgf4voFnidNAPV47JqeIq0oVLZ9-s/view"
+                  target="_blank"
+                  >Download CV</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================projects======================= -->
+      <section
+        id="projects"
+        class="container mx-auto mt-4 md:mt-7 lg:mt-10 px-2 md:px-6 lg:px-24"
+      >
+        <div>
+          <h2
+            class="text-center font-semibold text-2xl lg:text-3xl bg-[#010127] text-white py-3 lg:py-4 rounded-xl mx-3"
+          >
+            Projects
+          </h2>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8 p-4"
+        >
+          <div class="flex flex-col justify-between">
+            <div>
+              <img
+                class="rounded-lg"
+                style="width: 100%"
+                src="./projects-images/project 1.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3
+                class="text-center bg-[#010127] text-white p-2 mt-3 text-2xl font-semibold border-2 border-blue-900 rounded-lg"
+              >
+                Title: Life Sync
+              </h3>
+              <p
+                class="text-center mt-3 text-sm py-2 font-semibold border-2 border-blue-900 rounded-lg"
+              >
+                Used Technology: HTML , Tailwind CSS, React,Material Tailwind,
+                Tanstack Query, Axios, NodeJS, ExpressJS, MongoDB
+              </p>
+              <div class="flex gap-2 md:gap-3 lg:gap-4 mt-3 justify-center">
+                <a href="https://life-sync-bd.web.app/" target="_blank">
+                  <button
+                    class="bg-[#010127] px-2 lg:px-5 py-2 text-white rounded-lg outline-none"
+                  >
+                    Live Link
+                  </button></a
+                ><a
+                  href="https://github.com/Asad9340/Life-Sync-Client?tab=readme-ov-file"
+                  target="_blank"
+                >
+                  <button
+                    class="bg-[#010127] px-2 lg:px-5 py-2 text-white rounded-lg outline-none"
+                  >
+                    GitHub Repo
+                  </button></a
+                ><a
+                  href="https://github.com/Asad9340/Life-Sync-Server"
+                  target="_blank"
+                >
+                  <button
+                    class="bg-[#010127] px-2 lg:px-5 py-2 text-white rounded-lg outline-none"
+                  >
+                    Server Site
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col justify-between">
+            <div>
+              <img
+                class="rounded-lg"
+                style="width: 100%"
+                src="./projects-images/project 2.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3
+                class="text-center bg-[#010127] text-white p-2 mt-3 text-2xl font-semibold border-2 border-blue-900 rounded-lg"
+              >
+                Title: Hotel Hive
+              </h3>
+              <p
+                class="text-center mt-3 text-sm py-2 font-semibold border-2 border-blue-900 rounded-lg"
+              >
+                Used Technology: HTML , Tailwind CSS, Material Tailwind,
+                Tanstack Query, Axios, React, NodeJS, ExpressJS, MongoDB
+              </p>
+              <div class="flex gap-2 md:gap-3 lg:gap-4 mt-3 justify-center">
+                <a href="https://hotel-hive9340.web.app/" target="_blank">
+                  <button
+                    class="bg-[#010127] px-2 lg:px-5 py-2 text-white rounded-lg outline-none"
+                  >
+                    Live Link
+                  </button></a
+                ><a
+                  href="https://github.com/Asad9340/Hotel-Hive-Client?tab=readme-ov-file"
+                  target="_blank"
+                >
+                  <button
+                    class="bg-[#010127] px-2 lg:px-5 py-2 text-white rounded-lg outline-none"
+                  >
+                    GitHub Repo
+                  </button></a
+                ><a
+                  href="https://github.com/Asad9340/Hotel-Hive-Server"
+                  target="_blank"
+                >
+                  <button
+                    class="bg-[#010127] px-2 lg:px-5 py-2 text-white rounded-lg outline-none"
+                  >
+                    Server Site
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="project3" class="flex flex-col justify-between">
+            <div>
+              <img
+                style="width: 100%"
+                class="rounded-lg"
+                src="./projects-images/project 3.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3
+                class="text-center bg-[#010127] text-white p-2 mt-6 text-2xl font-semibold border-2 border-blue-900 rounded-lg"
+              >
+                Title: Artistic Alchemy
+              </h3>
+              <p
+                class="text-center mt-3 text-sm py-2 font-semibold border-2 border-blue-900 rounded-lg"
+              >
+                Used Technology: HTML , Daisy UI , Tailwind CSS, React, Material
+                Tailwind, NodeJS, ExpressJS, MongoDB
+              </p>
+              <div class="flex gap-2 md:gap-3 lg:gap-4 mt-3 justify-center">
+                <a href="https://artistic-alchemy.web.app/" target="_blank">
+                  <button
+                    class="bg-[#010127] px-2 lg:px-5 py-2 text-white rounded-lg outline-none"
+                  >
+                    Live Link
+                  </button></a
+                >
+
+                ><a
+                  href="https://github.com/Asad9340/Artistic-Alchemy-Client?tab=readme-ov-file"
+                  target="_blank"
+                >
+                  <button
+                    class="bg-[#010127] px-2 lg:px-5 py-2 text-white rounded-lg outline-none"
+                  >
+                    GitHub Repo
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/Asad9340/Artistic-Alchemy-Server"
+                  target="_blank"
+                >
+                  <button
+                    class="bg-[#010127] px-2 lg:px-5 py-2 text-white rounded-lg outline-none"
+                  >
+                    Server Site
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="project4" class="flex flex-col justify-between">
+            <div>
+              <img
+                style="width: 100%"
+                class="rounded-lg"
+                src="./projects-images/project 4.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3
+                class="text-center bg-[#010127] text-white p-2 mt-3 text-2xl font-semibold border-2 border-blue-900 rounded-lg"
+              >
+                Title: Elite Homes
+              </h3>
+              <p
+                class="text-center mt-3 text-sm py-2 font-semibold border-2 border-blue-900 rounded-lg"
+              >
+                Used Technology: HTML , Tailwind CSS, React , Material Tailwind
+              </p>
+              <div class="flex gap-2 md:gap-3 lg:gap-4 mt-3 justify-center">
+                <a href="https://elite-homes-3b134.web.app/" target="_blank">
+                  <button
+                    class="bg-[#010127] px-2 lg:px-5 py-2 text-white rounded-lg outline-none"
+                  >
+                    Live Link
+                  </button></a
+                ><a
+                  href="https://github.com/Asad9340/Elite-Homes?tab=readme-ov-file"
+                  target="_blank"
+                >
+                  <button
+                    class="bg-[#010127] px-2 lg:px-5 py-2 text-white rounded-lg outline-none"
+                  >
+                    GitHub Repo
+                  </button>
+                </a>
+                <button
+                  class="bg-[#010127] px-2 lg:px-5 py-2 text-white rounded-lg outline-none"
+                >
+                  <a
+                    href="https://github.com/Asad9340/Elite-Homes?tab=readme-ov-file"
+                    target="_blank"
+                    >Server Site
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button
+            id="seeProjects"
+            class="px-4 py-2 bg-[#010127] text-white rounded-lg outline-none"
+          >
+            See All Projects
+          </button>
+        </div>
+      </section>
+      <!-- ==============Education section=================== -->
+      <section
+        id="education"
+        class="container mx-auto mt-7 md:mt-10 lg:mt-14 px-2 md:px-6 lg:px-20"
+      >
+        <div>
+          <div>
+            <h2
+              class="text-center font-semibold text-2xl lg:text-3xl bg-[#010127] text-white py-3 lg:py-4 rounded-xl mx-3"
+            >
+              Education
+            </h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-4 px-4 mt-4 md:mt-8">
+            <div class="flex flex-col justify-center col-span-7">
+              <div>
+                <p class="underline mb-2">Currently Studying:</p>
+                <div class="flex gap-2 items-center text-2xl">
+                  <i class="fa-solid fa-user-graduate"></i>
+                  <h3 class="mb-3 font-semibold">Dept of ICT</h3>
+                </div>
+                <div class="flex gap-2 items-center text-2xl">
+                  <i class="fa-solid fa-building-columns"></i>
+                  <h3 class="font-semibold">
+                    MBSTU
+                    <span class="text-sm md:text-base font-light"
+                      >(Mawlana Bhashani Science and Technology
+                      University)</span
+                    >
+                  </h3>
+                </div>
+              </div>
+              <div class="my-2">
+                <p class="underline mb-2">HSC:</p>
+                <div class="flex gap-2 items-center text-base md:text-xl">
+                  <i class="fa-solid fa-school"></i>
+                  <h3>Dhaka Residential Model School</h3>
+                </div>
+              </div>
+              <div>
+                <p class="underline mb-2">SSC:</p>
+                <div class="flex gap-2 items-center text-base md:text-xl">
+                  <i class="fa-solid fa-school-circle-check"></i>
+                  <h3>Momena Ali Science School</h3>
+                </div>
+                <div class="flex gap-2 items-center text-base md:text-xl">
+                  <i class="fa-solid fa-school-circle-check"></i>
+                  <h3>Dhukuria Bera High School</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-5">
+              <img
+                class="rounded-lg w-full"
+                src="./images/education.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===================skills section================ -->
+      <section
+        id="skills"
+        class="container mx-auto mt-6 md:mt-8 lg:mt-12 px-2 md:px-6 lg:px-20"
+      >
+        <div>
+          <div class="text-center py-5">
+            <h2
+              class="text-center font-semibold text-2xl lg:text-3xl bg-[#010127] text-white py-3 lg:py-4 rounded-xl mx-3"
+            >
+              Skills
+            </h2>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 lg:gap-6 mx-4"
+          >
+            <!-- Progress -->
+            <div
+              class="px-8 lg:px-10 py-6 lg:py-8 rounded-lg bg-[#000000] hover:shadow-xl hover:shadow-[#000000] hover:duration-300"
+            >
+              <!-- <div
+                class="flex w-full h-5 md:h-6 bg-gray-200 rounded-full overflow-hidden dark:bg-gray-700"
+                role="progressbar"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div
+                  class="flex flex-col justify-center rounded-full overflow-hidden bg-[#00A6BF] text-xs text-white text-center whitespace-nowrap transition duration-500"
+                  style="width: 90%"
+                >
+                  Skill on HTML : 90%
+                </div>
+              </div> -->
+              <div class="text-[#00A6BF] mt-4 md:mt-6 text-center">
+                <h3 class="text-xl md:text-3xl font-semibold">
+                  <i class="fa-brands fa-html5"></i> HTML
+                </h3>
+                <p class="mt-2 text-sm">
+                  "Crafting digital experiences through HTML mastery."
+                </p>
+              </div>
+            </div>
+            <div
+              class="px-8 lg:px-10 py-6 lg:py-8 rounded-lg bg-[#000000] hover:shadow-xl hover:shadow-[#000000] hover:duration-300"
+            >
+              <!-- <div
+                class="flex w-full h-5 md:h-6 bg-gray-200 rounded-full overflow-hidden dark:bg-gray-700"
+                role="progressbar"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div
+                  class="flex flex-col justify-center rounded-full overflow-hidden bg-[#EA8FEA] text-xs text-white text-center whitespace-nowrap transition duration-500"
+                  style="width: 80%"
+                >
+                  Skill on CSS : 80%
+                </div>
+              </div> -->
+              <div class="text-[#EA8FEA] mt-4 md:mt-6 text-center">
+                <h3 class="text-xl md:text-3xl font-semibold">
+                  <i class="fa-brands fa-css3"></i> CSS
+                </h3>
+                <p class="mt-2 text-sm">
+                  "Elevating web aesthetics with CSS finesse."
+                </p>
+              </div>
+            </div>
+            <div
+              class="px-8 lg:px-10 py-6 lg:py-8 rounded-lg bg-[#000000] hover:shadow-xl hover:shadow-[#000000] hover:duration-300"
+            >
+              <!-- <div
+                class="flex w-full h-5 md:h-6 bg-gray-200 rounded-full overflow-hidden dark:bg-gray-700"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div
+                  class="flex flex-col justify-center rounded-full overflow-hidden bg-[#F9B572] text-xs text-white text-center whitespace-nowrap transition duration-500"
+                  style="width: 75%"
+                >
+                  Skill on JavaScript : 75%
+                </div>
+              </div> -->
+              <div class="text-[#F9B572] mt-4 md:mt-6 text-center">
+                <h3 class="text-xl md:text-3xl font-semibold">
+                  <i class="fa-brands fa-square-js"></i> JavaScript
+                </h3>
+                <p class="mt-2 text-sm">
+                  "Empowering interactivity with JavaScript wizardry."
+                </p>
+              </div>
+            </div>
+            <div
+              class="px-8 lg:px-10 py-6 lg:py-8 rounded-lg bg-[#000000] hover:shadow-xl hover:shadow-[#000000] hover:duration-300"
+            >
+              <!-- <div
+                class="flex w-full h-5 md:h-6 bg-gray-200 rounded-full overflow-hidden dark:bg-gray-700"
+                role="progressbar"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div
+                  class="flex flex-col justify-center rounded-full overflow-hidden bg-[#7743DB] text-xs text-white text-center whitespace-nowrap transition duration-500"
+                  style="width: 60%"
+                >
+                  Skill on React : 60%
+                </div>
+              </div> -->
+              <div class="text-[#7743DB] mt-4 md:mt-6 text-center">
+                <h3 class="text-xl md:text-3xl font-semibold">
+                  <i class="fa-brands fa-react"></i> React
+                </h3>
+                <p class="mt-2 text-sm">
+                  "Transforming development with the power of React."
+                </p>
+              </div>
+            </div>
+            <!-- End Progress -->
+          </div>
+        </div>
+      </section>
+      <!-- ===================contact with me section=============== -->
+      <section
+        id="contact"
+        class="mt-4 md:mt-7 lg:mt-10 container mx-auto px-2 md:px-6 lg:px-20"
+      >
+        <div class="mt-10 lg:mt-14 mb-4 md:mb-6 lg:mb-8">
+          <h2
+            class="text-center font-semibold text-2xl lg:text-3xl bg-[#010127] text-white py-3 lg:py-4 rounded-xl mx-3"
+          >
+            Get in Touch
+          </h2>
+        </div>
+        <div
+          class="grid gap-2 md:gap-4 lg:gap-6 grid-cols-1 md:grid-cols-2 p-4"
+        >
+          <div class="flex flex-col justify-center mb-6">
+            <div class="flex flex-col justify-center">
+              <h2
+                class="text-xl md:text-2xl lg:text-3xl text-[#010127] font-semibold"
+              >
+                Lets Chat
+              </h2>
+              <h2
+                class="text-xl md:text-2xl lg:text-3xl text-[#010127] font-semibold"
+              >
+                Tell me about your Thought...
+              </h2>
+              <p class="text-[#4F5A6C] mt-2">Let's create something together</p>
+            </div>
+            <div class="mt-5 space-y-2">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-user text-2xl text-[#DC143C]"></i>
+                <div class="text-base text-[#010127] font-semibold">
+                  <h3>Md Asadul Islam</h3>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-envelope text-2xl text-[#DC143C]"></i>
+                <div class="text-base text-[#010127] font-semibold">
+                  <h3>asadulislam1999@gmail.com</h3>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-location-dot text-2xl text-[#DC143C]"></i>
+                <div class="text-base text-[#010127] font-semibold">
+                  <h3>Sirajganj Bangladesh</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div class="relative">
+              <input
+                type="text"
+                class="peer py-3 px-4 ps-11 block w-full placeholder:text-black bg-[#EAEBEC] border-transparent rounded-lg text-sm outline-none"
+                placeholder="Enter name"
+              />
+              <div
+                class="absolute inset-y-0 start-0 flex items-center pointer-events-none ps-4 peer-disabled:opacity-50 peer-disabled:pointer-events-none"
+              >
+                <img class="w-4" src="./images/man.svg" alt="" />
+              </div>
+            </div>
+            <div class="relative">
+              <input
+                type="email"
+                class="peer py-3 px-4 ps-11 block w-full placeholder:text-black bg-[#EAEBEC] border-transparent rounded-lg text-sm outline-none"
+                placeholder="Enter email"
+              />
+              <div
+                class="absolute inset-y-0 start-0 flex items-center pointer-events-none ps-4 peer-disabled:opacity-50 peer-disabled:pointer-events-none"
+              >
+                <img class="w-4 text-[#fff]" src="./images/email.svg" alt="" />
+              </div>
+            </div>
+            <div class="relative">
+              <input
+                type="text"
+                class="peer py-3 px-4 ps-11 block w-full placeholder:text-black bg-[#EAEBEC] border-transparent rounded-lg text-sm outline-none"
+                placeholder="Enter Subject"
+              />
+              <div
+                class="absolute inset-y-0 start-0 flex items-center pointer-events-none ps-4 peer-disabled:opacity-50 peer-disabled:pointer-events-none"
+              >
+                <img
+                  class="w-4 text-[#fff]"
+                  src="./images/subject.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="relative">
+              <img
+                class="w-4 absolute top-4 left-4"
+                src="./images/message.svg"
+                alt=""
+              />
+              <textarea
+                class="peer py-3 ps-11 block w-full placeholder:text-black bg-[#EAEBEC] border-transparent rounded-lg text-sm outline-none"
+                name=""
+                id=""
+                cols="30"
+                rows="5"
+                placeholder="Enter Message"
+              ></textarea>
+            </div>
+            <div class="relative">
+              <div
+                class="text-center py-2 rounded-lg outline-none bg-[#010127] text-white active:bg-gray-700 hover:scale-105 hover:duration-700"
+              >
+                <button type="submit">Send message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#010127] mt-10 p-4">
+      <div class="text-[#4F5A6C] text-center text-[14px]">
+        <p>&copy; 2024 . All rights reserved.Created by Md Asadul Islam</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="./App.js"></script>
+  </body>
+</html>
